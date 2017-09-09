@@ -1,8 +1,5 @@
 language: python
 
-before_install:
-    - pip install -r robot/requirements.txt
-
 before_script:
     - python3 -m http.server
 
