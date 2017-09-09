@@ -1,16 +1,5 @@
 language: python
 
-addons:
-     chrome: stable
-
-dist: trusty
-env:
-    - DJANGO_VERSION=1.7.8
-    - DJANGO_VERSION=1.8.2
-
-before_install:
-    - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost
-
 install:
     - pip install -r robot/requirements.txt
 
